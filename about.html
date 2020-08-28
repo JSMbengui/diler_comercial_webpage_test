@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RI&A - Mediadores de Seguros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="sub_header">
+            <div class="main_sub_header">
+                <div class="header_title">
+                    <a href="/" style="color: rgb(254, 209, 83); font-style: italic;">RI&A</a>
+                </div>
+
+                <button class="btn_menu" onClick="showMenu()">
+                    <svg stoke="currentColor" fil="currentColor" stroke-width="0" viewBox="0 0 24 24" color="#ffffff"
+                        style="color:#ffffff;transition:0.3s easi-in-out" height="24px" width="24px"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <header class="header_desk">
+        <div class="sub_header_desk">
+            <h1 style="color: rgb(254, 209, 83); font-style: italic; font-size:x-large">RI&A</h1>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./about.html" style="color: rgb(254, 209, 83);">Quem Somos</a>
+                <a href="./whay.html">Por que contratar</a>
+            </nav>
+        </div>
+    </header>
+    <section class="sub_menu_mobile_visi" id="menu">
+        <a href="./index.html">Home</a>
+        <a href="./about.html" style="color: rgb(254, 209, 83);">Quem Somos</a>
+        <a href="./whay.html">Por que contratar</a>
+    </section>
+    <section class="section_sobre_destaque">
+        <div>
+            <h1>Fique tranquilo, nós ajudamos-lhe à atingir as suas metas</h1>
+        </div>
+    </section>
+    <section class="section_sobre">
+        <div>
+            <hr />
+            <h3>Sobre</h3>
+            <p>Somos uma empresa de prestação de serviços de midiação e corretagem de seguros directo, tendente a
+                preparação e celebração de contratos,
+                assistência aos contratos e consultoria em matéria de seguros junto dos segurados, bem como realizar
+                estudos ou emitir pareceres técnicos sobre seguros.
+            </p>
+        </div>
+        <div>
+            <img src="img/man_computer.png" />
+        </div>
+    </section>
+    <section class="section_missao_valores">
+        <div>
+            <h3>Missão</h3>
+            <p>Contribuir para o desenvolvimento do mercado de mediação e corretagem de seguros, promovendo a inclusão,
+                a inovação e a qualidade dos serviços, satisfazendo as necessidades dos clientes.</p>
+        </div>
+        <div>
+            <h3>Visão</h3>
+            <p>Ser refência nacional, oferecendo soluções para os nossos clientes.</p>
+        </div>
+    </section>
+    <section class="section_valores">
+        <div>
+            <h3>Nossos valores</h3>
+            <h4>Criatividade</h4>
+            <p>A inovação guia nossas ações e transforma o nosso futuro.</p>
+
+            <h4>Assumimos responsabilidades</h4>
+            <p>Comprometimento e lealdade são valores inegociáveis em nossos relacionamentos.</p>
+
+            <h4>Qualidade em primeiro lugar</h4>
+            <p>A qualidade dos serviços, satisfazendo as necessidades dos clientes é primodial para nós</p>
+        </div>
+        <div>
+            <img src="img/img-facil.png" />
+        </div>
+    </section>
+
+    <footer class="footer_page">
+        <h6>Todos os direitos reservados &copy;2020 R1 </h6>
+    </footer>
+    <script>
+        function showMenu() {
+            let menu = document.querySelector("#menu");
+            if (menu.classList.contains("sub_menu_mobile")) {
+                console.log("remove")
+                menu.setAttribute('class', 'sub_menu_mobile_visi')
+            } else {
+                console.log("add")
+                menu.setAttribute('class', "sub_menu_mobile");
+            }
+        }
+    </script>
+</body>
+
+</html>

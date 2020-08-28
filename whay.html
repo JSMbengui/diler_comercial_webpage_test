@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RI&A - Mediadores de Seguros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="sub_header">
+            <div class="main_sub_header">
+                <div class="header_title">
+                    <a href="/" style="color: rgb(254, 209, 83); font-style: italic;">RI&A</a>
+                </div>
+
+                <button class="btn_menu" onClick="showMenu()">
+                    <svg stoke="currentColor" fil="currentColor" stroke-width="0" viewBox="0 0 24 24" color="#ffffff"
+                        style="color:#ffffff;transition:0.3s easi-in-out" height="24px" width="24px"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <header class="header_desk">
+        <div class="sub_header_desk">
+            <h1 style="color: rgb(254, 209, 83); font-style: italic; font-size:x-large">RI&A</h1>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./about.html">Quem Somos</a>
+                <a href="./whay.html" style="color: rgb(254, 209, 83);">Por que contratar</a>
+            </nav>
+        </div>
+    </header>
+    <section class="sub_menu_mobile_visi" id="menu">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">Quem Somos</a>
+        <a href="./whay.html" style="color: rgb(254, 209, 83);">Por que contratar</a>
+    </section>
+    <section class="section_why_use">
+        <p>Poque usar</p>
+        <h1>Você tem um sonho. Nós temos a solução para você alcança-lo.</h1>
+    </section>
+    <section class="section_why_details">
+        <div>
+            <h3>Fácil de usar e aprender</h3>
+            <p>Não é preciso ser um expert em seguros ou saber ou conhecer os vocabulário técnico específico e a
+                natureza jurídica complexa do contrato
+            </p>
+
+            <h3>Adaptado a sua realidade</h3>
+            <p>Nós fazemos todos os trabalho pesado por você. Fornecendo conselhos adaptados aos seus
+                próprios interesses enquanto tomador do seguro e consumidor.
+            </p>
+        </div>
+        <div>
+            <img src="img/man_computer.png" />
+        </div>
+    </section>
+    <section class="section_why_contract">
+        <div>
+            <h3>Porque contratar</h3>
+            <p>Com a nossa intervenção nós analisamos e sondamos o mercado e aconselhamos a contratação do seguro
+                mais adequado e apropriado à sua situação específica,
+                não soment eem termos de cobertura e transferência de riscos como também no que ao preço-prémio diz
+                respeíto
+            </p>
+            <h3>Seguro adequado</h3>
+            <p>Avaliamos o seguro mais adequado e que tem as coberturas apropriadas às suas
+                necessidades de segurança enquanto consumidor de seguros, com um preço/prémio
+                ajustado ao risco assumido pela seguradora.
+            </p>
+            <h3>Beneficio</h3>
+            <p>A certeza de ter ao seu lado um consultor especializado que lhe torna mais fácil,
+                eficiente e ecnómica a gestão dos seus riscos.
+            </p>
+        </div>
+        <div>
+            <img src="img/aconselhamento.jpg" />
+        </div>
+    </section>
+    <footer class="footer_page">
+        <h6>Todos os direitos reservados &copy;2020 R1 </h6>
+    </footer>
+    <script>
+        function showMenu() {
+            let menu = document.querySelector("#menu");
+            if (menu.classList.contains("sub_menu_mobile")) {
+                console.log("remove")
+                menu.setAttribute('class', 'sub_menu_mobile_visi')
+            } else {
+                console.log("add")
+                menu.setAttribute('class', "sub_menu_mobile");
+            }
+        }
+    </script>
+</body>
+
+</html>
